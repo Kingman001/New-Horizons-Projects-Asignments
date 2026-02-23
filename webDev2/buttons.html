@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buttons</title>
+    <link rel="stylesheet" href="styles.css">  
+    
+    <style>
+       .subscribe-button{
+            background-color: rgb(255, 0, 0);
+            color: white;
+            border: none;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            padding-right: 16px;
+            padding-left: 16px;
+            border-radius: 5px;
+            cursor: pointer;
+            vertical-align: top;
+            margin-right: 10px;
+            transition: opacity 0.15s;
+       }
+       .subscribe-button:hover{
+            opacity: 0.8;
+        }
+        .subscribe-button:active{
+            opacity: 0.5;
+        }
+
+        .Join-button{
+            border-style: solid;
+            border-color: rgb(41, 118, 211);
+            background-color: white;
+            color: rgb(41, 118, 211);
+            border-width: 1px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            padding-right: 16px;
+            padding-left: 16px;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-right:10px;
+            vertical-align: top;
+
+            transition: background-color 0.15s, 
+            color 0.15s;
+        }
+        .Join-button:hover{
+            background-color: rgb(41, 118, 211);
+            color: white;
+        }
+        .Join-button:active{
+            opacity: 0.7;
+        }
+
+        .tweet-button{
+            background-color: rgb(2, 161, 242);
+            color: white;
+            border: none;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            padding-right: 16px;
+            padding-left: 16px;
+            border-radius: 20px;
+            cursor: pointer;
+            font-weight: bold;
+            font-size: 15px;
+            vertical-align: top;
+            transition: box-shadow 0.15s;
+        }  
+        
+        .tweet-button:hover{
+            box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+        }
+        
+        .success{
+            border-style: solid;
+            border-color: darkgreen;
+            background-color: darkgreen;
+            color: palegreen;
+            border-width: 5px;
+            padding-top: 7.5px;
+            padding-bottom: 7.5px;
+            padding-right: 15px;
+            padding-left: 15px;
+            border-radius: 20px;
+            cursor: pointer;
+            margin-right: 5px;
+            vertical-align: center;
+            font-weight: 400;
+            font-family: Tahoma;
+            text-transform: uppercase;
+            transition: background-color 0.5s, 
+            color 0.5s, font-weight 0.75s;
+        }
+        .success:hover{
+            background-color: palegreen;
+            color: darkgreen;
+            font-weight: 800;
+        }
+        .success:active{
+            opacity: 0.8;
+        }
+    
+        .warning{
+            border-style: solid;
+            border-color: red;
+            background-color: red;
+            color: white;
+            border-width: 3px;
+            padding-top: 12px;
+            padding-bottom: 12px;
+            padding-right: 20px;
+            padding-left: 20px;
+            border-radius: 10px;
+            cursor: pointer;
+            margin-right:5px;
+            font-weight: bold;
+            font-size: 20px;
+            vertical-align: center;
+            transition: background-color 0.3s, 
+            color 0.5s, box-shadow 0.5s;
+        }
+        .warning:hover{
+            background-color: white;
+            color: red;
+            box-shadow: 3px 3px 5px gray;
+        }
+        
+        .info{
+            border-style: dash;
+            border-color: rgb(240, 120, 60);
+            background-color: #fff;
+            color: rgb(240, 120, 60);
+            border-width: 3px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            padding-right: 10px;
+            padding-left: 10px;
+            border-radius: 10px;
+            cursor: pointer;
+            margin-right:5px;
+            font-weight: bold;
+            font-size: 20px;
+            vertical-align: center;
+            transition: box-shadow 0.5s;
+        }
+        .info:hover{
+            box-shadow: 2px 2px 15px #ee8844;
+        }
+        
+        .light{
+            border-style: dashed;
+            border-color: rgb(120, 60, 120);
+            background-color: rgb(240, 120, 250);
+            color: rgb(255, 200, 255);
+            border-width: 3px;
+            padding-top: 12px;
+            padding-bottom: 12px;
+            padding-right: 20px;
+            padding-left: 20px;
+            border-radius: 10px;
+            cursor: pointer;
+            margin-right:5px;
+            font-weight: bold;
+            vertical-align: center;
+            transition: opacity 0.5s, box-shadow 0.5s;
+        }
+        .light:hover{
+            opacity:0.8;
+            box-shadow: 3px 3px 5px gray;
+        }
+        
+        .dark{
+            border-style: solid;
+            border-color: #576;
+            background-color: #023;
+            color: #576;
+            border-width: 5px;
+            padding-top: 8px;
+            padding-bottom: 8px;
+            padding-right: 10px;
+            padding-left: 10px;
+            border-radius: 15px;
+            cursor: pointer;
+            margin-right:5px;
+            font-weight: bold;
+            font-size: 20px;
+            vertical-align: center;
+        }
+        .dark:active{
+            background-color: #032;
+            color: #657;
+        }
+        
+    </style>
+</head>
+<body>
+    <h1>Buttons</h1>
+    <button class="subscribe-button">Subscribe Button</button>
+    <button class="Join-button">Join Button</button>
+    <button class="tweet-button">Tweet Button</button> <br><br>
+
+    <button class="success">Success Button</button>
+    <button class="warning">Warning Button</button>
+    <button class="info">Info Button</button>
+    <button class="light">Light Button</button>
+    <button class="dark">Dark Button</button>
+</body>
+</html>
