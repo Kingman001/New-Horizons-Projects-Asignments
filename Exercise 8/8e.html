@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Exercise 8e - Uber request-a-ride form</title>
+  <style type="text/css" media="all">
+    form{
+      padding: 15px;
+    }
+    
+    .text{
+      font-size: 3em;
+      font-weight: 500;
+      margin: 0;
+    }
+    input{
+      width: 600px;
+      display: block;
+      font-family: Arial;
+      font-size: 1.5em;
+      padding: 1.5em;
+      border: none;
+      border-radius: 5px;
+      margin: 15px 0;
+      background-color: rgb(225,225,225);
+    }
+    #request, #schedule{
+      display: inline-block;
+      font-family: Arial;
+      font-size: 2em;
+      padding: 15px 25px;
+      border: none;
+      border-radius: 2px;
+      margin-top: 50px;
+    }
+    #request{
+      background-color: rgb(0,0,0);
+      color: rgb(225,225,225);
+    }
+    
+    #schedule{
+      background-color: rgb(225,225,225);
+      margin-left: 20px;
+    }
+  </style>
+</head>
+<body>
+  <form action="" method="get" accept-charset="utf-8">
+      <p class="text">Request a ride now</p>
+      <input type="text" name="pickup" id="pickup" placeholder="Enter pickup location"/>
+      <input type="text" name="destination" id="destination" placeholder="Enter destination" />
+      <button type="submit" name="request" id="request">Request now</button>
+      <button type="submit" name="schedule" id="schedule">Schedule for later</button>
+  </form>
+</body>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Exercise 8d - sign up form</title>
+  <style type="text/css" media="all">
+    input{
+      font-family: Arial;
+      font-size: 2em;
+      padding: 1.5rem;
+      border: 2px solid rgba(200,200,200, 0.9);
+      border-radius: 15px;
+      margin: 5px;
+    }
+    #fName, #lName{
+      width: 200px;
+      display: inline-block;
+      
+    }
+    #email{
+      width: 465px;
+      display: block;
+    }
+    #signUp{
+      width: 510px;
+      display: block;
+      background-color: royalblue;
+      color: white;
+      font-family: Arial;
+      font-size: 2em;
+      padding: 1.5rem;
+      text-align: center;
+      margin: 20px 5px;
+      border-radius: 15px;
+    }
+  </style>
+</head>
+<body>
+  <form action="" method="get" accept-charset="utf-8">
+      <input type="text" name="firstName" id="fName" placeholder="First Name"/>
+      <input type="text" name="lastName" id="lName" placeholder="Last Name" />
+      <input type="email" name="email" id="email" placeholder="Email"/>
+      <button type="submit" id="signUp">Sign Up</button>
+  </form>
+</body>
