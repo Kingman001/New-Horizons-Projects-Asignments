@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 10e - layouts</title>
+    <style type="text/css" media="all">
+      body {
+    font-family: Arial;
+    background-color: #fff;
+    color: #000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.card {
+    background-color: #fff;
+    color: #000;
+    border-radius: 2px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    width: 180px;
+    margin: 10px;
+}
+
+.profile-pic {
+    width: 100%;
+    height: 180px;
+    display: block;
+    object-fit: cover;
+}
+
+.details {
+    padding: 10px;
+}
+
+.name {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.mutual-friends {
+    display: flex;
+    align-items: center;
+    font-size: 15px;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+.icon {
+    width: 25px;
+    height: 25px;
+    margin-right: 5px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.add-friend-btn {
+    padding: 10px 15px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.add-friend-btn:hover {
+    background-color: #0056b3;
+}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <img src="oliver.jpg" alt="Oliver" class="profile-pic">
+            <div class="details">
+                <div class="name">Oliver</div>
+                <div class="mutual-friends">
+                    <img src="mutual-friend.jpg" alt="friends icon" class="icon">
+                    2 mutual friends
+                </div>
+                <button class="add-friend-btn">Add Friend</button>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="mimi.jpg" alt="Mimi" class="profile-pic">
+            <div class="details">
+                <div class="name">Mimi</div>
+                <div class="mutual-friends">
+                    <img src="mutual-friend.jpg" alt="friends icon" class="icon">
+                    3 mutual friends
+                </div>
+                <button class="add-friend-btn">Add Friend</button>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="rex.jpg" alt="Rex" class="profile-pic">
+            <div class="details">
+                <div class="name">Rex</div>
+                <div class="mutual-friends">
+                    <img src="mutual-friend.jpg" alt="friends icon" class="icon">
+                    4 mutual friends
+                </div>
+                <button class="add-friend-btn">Add Friend</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
