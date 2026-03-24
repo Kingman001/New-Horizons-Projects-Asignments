@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 11b - grid layouts 2</title>
+    <style type="text/css" media="all">
+      body {
+    font-family: Arial;
+    background-color: #fff;
+    color: #000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px;
+}
+
+.container {
+  width: 500px;
+    display: grid;
+    grid-template-columns: 50px 1fr 75px;
+    align-items: center;
+}
+
+.column1, .column3{
+  background-color: powderblue;
+}
+
+.column2{
+  background-color: #f8d8e0;
+}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="column1">
+          <p>col 1</p>
+        </div>
+        
+        <div class="column2">
+          <p>col 2</p>
+        </div>
+                
+        <div class="column3">
+          <p>col 3</p>
+        </div>
+    </div>
+</body>
+</html>

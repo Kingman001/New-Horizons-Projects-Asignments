@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 11c - grid layouts 3</title>
+    <style type="text/css" media="all">
+      body {
+    font-family: Arial;
+    background-color: #fff;
+    color: #000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px;
+}
+
+.container {
+    width: 100%;
+    display: grid;
+    grid-template-rows: 2;
+    row-gap: 10px;
+}
+
+.rows{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 20px;
+    align-items: center;
+}
+
+.column{
+  background-color: #f8d8e0;
+}
+    </style>
+</head>
+<body>
+    <div class="container">
+      <div class="rows">
+        <div class="column">
+          <p>col 1</p>
+        </div>
+        
+        <div class="column">
+          <p>col 2</p>
+        </div>
+                
+        <div class="column">
+          <p>col 3</p>
+        </div>
+                
+        <div class="column">
+          <p>col 4</p>
+        </div>
+      </div>
+      
+      <div class="rows">
+        <div class="column">
+          <p>col 1</p>
+        </div>
+        
+        <div class="column">
+          <p>col 2</p>
+        </div>
+                
+        <div class="column">
+          <p>col 3</p>
+        </div>
+                
+        <div class="column">
+          <p>col 4</p>
+        </div>
+      </div>
+    </div>
+</body>
+</html>
