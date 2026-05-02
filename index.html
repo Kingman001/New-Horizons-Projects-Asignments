@@ -1,28 +1,141 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>New Horizons Assignments</title>
-  <link rel="stylesheet" href="style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Joshua | Portfolio</title>
+  <link rel="stylesheet" href="main.css">
 </head>
 <body>
-<main class="main-content">
-  <div>
-    <h1>Joshua Ishaku Audu</h1>
-    <p>This page contains my projects and assignments from New Horizon's Web Development Course.</p>
-  </div>
-  <div class="assignments">
-    <ul class="assignmentList">
-      <a href="Exercise1/exercise1.html"><li>Exercise 1</li></a>
-      <a href="webDev2/buttons.html" target="_blank"><li>Assignment on buttons</li></a>
-      <a href="Exercise5/exercise5.html"><li>Exercise 5</li></a>
-      <a href="Exercise8/exercise8.html"><li>Exercise 8</li></a>
-      <a href="Exercise10/exercise10.html"><li>Exercise 10</li></a>
-      <a href="Exercise11/exercise11.html"><li>Exercise 11</li></a>
-    </ul>
-  </div>
-</main>
+  <header>
+    <nav>
+      <div class="logo">
+        <img src="logo.webp" alt="LightDzyns Logo" />
+      </div>
+      <div class="nav-links">
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </nav>
+  </header>
+
+
+  <section class="hero">
+    <div class="hero-content">
+      <div class="hero-text">
+        <h1>Hi, I'm Joshua 👋</h1>
+        <p>I'm a passionate web developer based in Kaduna, creating beautiful and functional digital experiences.</p>
+        <a href="#projects" class="btn">View My Projects</a>
+      </div>
+      <div class="profile-image">
+        <img src="profile-image.jpg" alt="Joshua's Profile">
+      </div>
+    </div>
+  </section>
+
+
+  <section id="about" class="about">
+    <div class="container">
+      <h2>About Me</h2>
+      <div class="about-content">
+        <div class="about-image">
+          <img src="profile-image.jpg" alt="About Joshua">
+        </div>
+        <div>
+          <p>
+            I'm a web developer from Kaduna, Nigeria. I love turning ideas into clean, 
+            responsive, and user-friendly websites.
+          </p>
+          <p>
+            With a strong focus on modern web technologies, I enjoy building projects that solve real problems 
+            and deliver great user experiences.
+          </p>
+          <h3>Skills:</h3>
+          <p><strong>HTML5 • CSS3 • JavaScript • Flexbox • Grid • Responsive Design • Git</strong></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section id="projects" class="projects">
+    <div class="container">
+      <h2>My Projects</h2>
+      <div class="project-grid">
+        <div class="project-card"><a href="/Exercise1/exercise1.html">
+          <img src="Placeholder-1.jpg" alt="Project 1">
+          <div class="project-info">
+            <h3>Project 1</h3>
+            <p>This project consists of 7 assignments. It includes exercises on fonts and buttons.</p>
+          </div></a>
+        </div>
+
+        <div class="project-card"><a href="/webDev2/buttons.html">
+          <img src="placeholder-2.jpg" alt="Project 2">
+          <div class="project-info">
+            <h3>Project 2</h3>
+            <p>This Project is an assignment on styling buttons.</p>
+          </div></a>
+        </div>
+
+        <div class="project-card"><a href="/Exercise5/exercise5.html">
+          <img src="placeholder-3.jpg" alt="Project 3">
+          <div class="project-info">
+            <h3>Project 3</h3>
+            <p>This project contains seven (7) assignments on styling fonts.</p>
+          </div></a>
+        </div>
+
+        <div class="project-card"><a href="/Exercise8/exercise8.html">
+          <img src="placeholder-4.jpg" alt="Project 4">
+          <div class="project-info">
+            <h3>Project 4</h3>
+            <p>This project contains five (5) assignments on using form elements.</p>
+          </div></a>
+        </div>
+
+        <div class="project-card"><a href="/Exercise10/exercise10.html">
+          <img src="placeholder-5.jpg" alt="Project 5">
+          <div class="project-info">
+            <h3>Project 5</h3>
+            <p>This project contains five (5) assignments layouts, and the use of flexbox.</p>
+          </div></a>
+        </div>
+
+        <div class="project-card"><a href="/Exercise11/exercise11.html">
+          <img src="placeholder-5.jpg" alt="Project 6">
+          <div class="project-info">
+            <h3>Project 6</h3>
+            <p>This project contains four (4) assignments on using grid layouts.</p>
+          </div></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  
+  <section id="contact" class="contact">
+    <div class="container">
+      <div class="contact-content">
+        <h2>Get In Touch</h2>
+        <p style="font-size: 1.2rem; max-width: 600px;">
+          I'm always open to discussing new opportunities, collaborations, or just saying hello.
+        </p>
+        <p>
+          <a href="mailto: ishakujoshuaaudu@gmail.com">ishakujoshuaaudu@gmail.com</a>
+        </p>
+        <p>
+          <strong>Connect with me on X:</strong> 
+          <a href="https://x.com/iAmCoachJ0sh" target="_blank">@iAmCoachJ0sh</a>
+        </p>
+      </div>
+    </div>
+  </section>
+
+
+  <footer>
+    <p>&copy; 2026 Joshua</p>
+  </footer>
 </body>
 </html>
